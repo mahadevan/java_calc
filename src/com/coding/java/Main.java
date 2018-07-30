@@ -1,20 +1,24 @@
 package com.coding.java;
 
+// Code by Mahadevan Iyer
+
 import java.util.Scanner;
 import java.lang.String;
 
+// This program implements the working of a Simple Calculator.
+
 public class Main {
+
     public static void main(String[] args) {
 
         Double firstNum = getFirstNum("Enter First Number : ");
-//        System.out.println(String.format("First Number you entered was %s", firstNum));
 
         Double secondNum = getSecondNum("Enter Second Number : ");
-//        System.out.println(String.format("Second Number you entered was %s", secondNum));
 
         performAction(firstNum,secondNum);
 
     }
+
         public static Double getFirstNum (String ask){
             System.out.print(ask);
             Scanner readFirstNum = new Scanner(System.in);
